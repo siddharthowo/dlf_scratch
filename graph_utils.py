@@ -1,5 +1,5 @@
 class Value:
-    def __init__(self,data,_children=(),_op="",):
+    def __init__(self,data,_children=(),_op=""):
         assert isinstance(data, (int, float)), f"Data must be a number, received {type(data).__name__}"
         self.data=data
         self.grad=0.0
